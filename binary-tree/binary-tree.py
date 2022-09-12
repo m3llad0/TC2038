@@ -1,8 +1,19 @@
 # Graph theory
 # Build a binary tree with the numbers {11,6,8,19,4,10,5,17,43,49,31}
 
+# import csv
 
-elements = [11,6,8,19,4,10,5,17,43,49,31]
+import numpy as np
+
+
+# elements = []
+# [11,6,8,19,4,10,5,17,43,49,31]
+
+def getElements():
+    with open("elements.csv") as elementscsv:
+        elements = np.loadtxt(elementscsv, delimiter = ',')
+
+    return elements
 
 class Node:
     def __init__(self, data):
@@ -47,6 +58,8 @@ class Tree:
             self._printTree(node.right)
 
 def main():
+
+    elements = getElements()
     tree = Tree()
 
     for element in elements:
