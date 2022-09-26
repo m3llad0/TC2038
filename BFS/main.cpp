@@ -11,13 +11,13 @@ Tonatiuh Reyes A01025459.
 
 int main(){
 
-   Graph g(4);
-   g.addEdge(1, 2);
-   g.addEdge(1, 4);
-   g.addEdge(2, 3);
-   g.addEdge(3, 5);
-   g.addEdge(4, 2);
-   g.addEdge(5, 4);
+   Graph g(6);
+   g.addEgde(1, 2);
+   g.addEgde(1, 4);
+   g.addEgde(2, 3);
+   g.addEgde(3, 5);
+   g.addEgde(4, 2);
+   g.addEgde(5, 4);
 
   g.BFS(2);
 
