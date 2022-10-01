@@ -1,10 +1,27 @@
-#ifndef _STACK_H_
-#define _STACK_H_
+// archivo.h de templates de pila de listas ligadas 
 
-  #include <iostream>
-  #include <stdexcept>
-  #include "StackNode.h"
+#include <iostream>
+#include <stdexcept>
 
+// template stacknode 
+  template <class T>
+  class StackNode { 
+  public: 
+      T data; 
+      StackNode<T> *next;
+      StackNode();
+      StackNode(T val);        
+  }; 
+
+  template<class T>
+  StackNode<T>::StackNode() : data{}, next{nullptr} {}
+
+  template<class T>
+  StackNode<T>::StackNode(T val){
+      data = val;
+      next = nullptr;
+  }
+// template stacklinkend list 
   template <class T>
   class StackLinkedList {
       private:
@@ -23,16 +40,16 @@
         
   };
 
+// creando un stack vacio 
   template<class T>
   StackLinkedList<T>::StackLinkedList() {
-      //std::cout << "--->Creando un stack vacio" << std::endl;
       front = nullptr;
       numElements = 0;
   }
 
+// Liberando memoria del stack 
   template<class T>
   StackLinkedList<T>::~StackLinkedList() {
-      //std::cout << "--->Liberando memoria del stack" << std::endl;
     StackNode<T> *p, *q;
     p = front;
     while (p != nullptr) {
@@ -88,8 +105,3 @@
       value = front->data;
     return value;
   }
-  
-  
-
-
-#endif // _STACK_H_

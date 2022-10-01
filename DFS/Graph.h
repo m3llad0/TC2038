@@ -1,11 +1,8 @@
-#ifndef __GRAPH_H_
-#define __GRAPH_H_
 #include <iostream>
 #include <vector>
 #include <string>
 #include <set>
 #include "LinkedList.h"
-#include "QueueLinkedList.h"
 #include "StackLinkedList.h"
 
 class Graph {
@@ -23,19 +20,10 @@ class Graph {
     void split(std::string line, std::vector<int> & res);
     void printAdjList();
     void printAdjMatrix();
-
   
   public:
     Graph(int representacion, std::istream& input);
     ~Graph();
     void printGraph();
-    void BFS(int v);
     void DFS(int v);
-
-
 };
-
-
-
-
-#endif // __GRAPH_H_

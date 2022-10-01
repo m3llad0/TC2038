@@ -1,10 +1,27 @@
-#ifndef _LINKEDLIST_H_
-#define _LINKEDLIST_H_
+// archivo.h de templates de listas ligadas 
 
-  #include<iostream>
-  #include <stdexcept>
-  #include "LLNode.h"
+#include<iostream>
+#include <stdexcept>
 
+  // Template de nodo de lista ligada 
+  template <class T>
+  class LLNode { 
+  public: 
+      T data; 
+      LLNode<T> *next;
+      LLNode();
+      LLNode(T val);        
+  }; 
+
+  template<class T>
+  LLNode<T>::LLNode() : data{}, next{nullptr} {}
+
+  template<class T>
+  LLNode<T>::LLNode(T val){
+      data = val;
+      next = nullptr;
+  }
+// Template de lista ligada 
   template <class T>
   class LinkedList {
       private:
@@ -23,18 +40,16 @@
         T getData(int position);
 
   };
-
+// Lista vacia 
   template<class T>
   LinkedList<T>::LinkedList() {
-      //std::cout << "--->Creando una lista vacia" << std::endl;
       head = nullptr;
       tail = nullptr;
       numElements = 0;
   }
-
+// liberando memoria de la lista ligada 
   template<class T>
   LinkedList<T>::~LinkedList() {
-      //std::cout << "--->Liberando memoria de la lista ligada" << std::endl;
     LLNode<T> *p, *q;
     p = head;
     while (p != nullptr) {
@@ -66,7 +81,7 @@
   void LinkedList<T>::printLastNode() {
     std::cout << tail->data << std::endl;
   }
-
+// // añadir valor al final 
   template<class T>
   void LinkedList<T>::addFirst(T value) {
     LLNode<T> *newLLNode = new LLNode<T>(value);
@@ -76,7 +91,7 @@
       tail = newLLNode;
     numElements++;    
   }
-
+// añadir valor al ultimo 
   template<class T>
   void LinkedList<T>::addLast(T value) {
     if (head == nullptr) {
@@ -90,7 +105,7 @@
       numElements++;
     }
   }
-
+//obtener valores de posición 
   template<class T>
   T LinkedList<T>::getData(int position) {
     if (position < 0 || position >= numElements) {
@@ -110,5 +125,3 @@
       return -1;
     }
   }
-
-#endif // _LINKEDLIST_H_
