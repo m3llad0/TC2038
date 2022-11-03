@@ -26,11 +26,14 @@ string readString(string fileName) {
 }
 
 int main() {
-  string s = "00111000011110101000111";
+  string s = readString("Z function-Test01.csv");
+  // Get s length
   int n = s.length();
   cout << n << endl;
+  // Iteration in n
   for (int i = 0; i < n; i++) {
-    int j = 1;
+    int j = 0;
+    // Compares s[j] position with s[i+j], adds one to count and return j
     while (i + j < n && s[j] == s[i + j]) {
       j++;
     }
