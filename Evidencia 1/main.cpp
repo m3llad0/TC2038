@@ -1,4 +1,4 @@
-// Algoritmo Z-function
+// Evidencia 1
 // Tonatiuh Reyes
 // Diego Mellado
 // Iwalani Amador
@@ -16,7 +16,7 @@ string readString(string fileName) {
 
   string elem;
 
-  while (getline(inFile, elem, ',')) {
+  while (getline(inFile, elem)) {
     s += elem;
   }
 
@@ -25,14 +25,13 @@ string readString(string fileName) {
 }
 
 int main() {
-  string s = "hola me llamo virus xd";
-  string aBuscar;
-  cout << "Ingrese la cadena a buscar: ";
-  cin >> aBuscar;
+  string s = readString("transmission.txt");
+  string aBuscar = readString("mcode1.txt");
   int aSize = aBuscar.size();
   aBuscar += s;
   int n = aBuscar.length();
   string findIndex = "";
+  int incidence = 0;
   for (int i = 0; i < n; i++) {
     int j = 0;
     while (i + j < n && aBuscar[j] == aBuscar[i + j]) {
@@ -40,15 +39,20 @@ int main() {
     }
     if (j == aBuscar.length()) {
       cout << "Longitud del string: " << j - aSize << endl;
-      cout << "String: ";
-    } else if  (j != aBuscar.length()) {
-      cout << j << ' ';
     }
-    if (j > 2) {
+    if (j >= aSize && i != 0) {
       findIndex += to_string(i) + " ";
+      incidence++;
     }
   }
   cout << endl;
-  cout << "Indices de la cadena con matches mayores a 2 caracteres: ";
-  cout << findIndex << endl;
+
+  if (incidence > 0) {
+    cout << "true" << endl;
+    cout << "Numero de incidencias: " << incidence << endl;
+    cout << "Indices de la cadena con matches identicos: ";
+    cout << findIndex << endl;
+  } else {
+    cout << "false" << endl;
+  }
 }
