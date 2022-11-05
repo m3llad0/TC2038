@@ -1,0 +1,430 @@
+SCHONING ALGORITHM FOR 3K-SAT SOLUTION
+Keys: {'A': 1, 'B': 2, 'C': 3, 'D': 4, 'E': 5, 'F': 6, 'G': 7, 'H': 8, 'I': 9, 'J': 10, 'K': 11, 'L': 12, 'M': 13, 'N': 14, 'O': 15, 'P': 16, 'Q': 17, 'R': 18, 'S': 19, 'T': 20}
+
+Original Instance: {'Q': True, 'N': False, 'S': True, 'J': True, 'B': False, 'E': True, 'R': True, 'T': False, 'H': True, 'I': False, 'M': False, 'F': False, 'A': True, 'D': True, 'O': True, 'L': False, 'C': False, 'P': True, 'K': False, 'G': True}
+
+*********************************************** iteration no.1
+Satisfactory clauses: 83
+Unsatisfactory clauses: 8
+-Clausule to change: [11 -8 7 0]
+-Variable to change: H --> False
+New Instance: {'Q': True, 'N': False, 'S': True, 'J': True, 'B': False, 'E': True, 'R': True, 'T': False, 'H': False, 'I': False, 'M': False, 'F': False, 'A': True, 'D': True, 'O': True, 'L': False, 'C': False, 'P': True, 'K': False, 'G': True}
+
+*********************************************** iteration no.2
+Satisfactory clauses: 82
+Unsatisfactory clauses: 9
+-Clausule to change: [-18 -1 12 0]
+-Variable to change: R --> False
+New Instance: {'Q': True, 'N': False, 'S': True, 'J': True, 'B': False, 'E': True, 'R': False, 'T': False, 'H': False, 'I': False, 'M': False, 'F': False, 'A': True, 'D': True, 'O': True, 'L': False, 'C': False, 'P': True, 'K': False, 'G': True}
+
+*********************************************** iteration no.3
+Satisfactory clauses: 84
+Unsatisfactory clauses: 7
+-Clausule to change: [11 18 9 0]
+-Variable to change: R --> True
+New Instance: {'Q': True, 'N': False, 'S': True, 'J': True, 'B': False, 'E': True, 'R': True, 'T': False, 'H': False, 'I': False, 'M': False, 'F': False, 'A': True, 'D': True, 'O': True, 'L': False, 'C': False, 'P': True, 'K': False, 'G': True}
+
+*********************************************** iteration no.4
+Satisfactory clauses: 82
+Unsatisfactory clauses: 9
+-Clausule to change: [20 -15 -10 0]
+-Variable to change: J --> False
+New Instance: {'Q': True, 'N': False, 'S': True, 'J': False, 'B': False, 'E': True, 'R': True, 'T': False, 'H': False, 'I': False, 'M': False, 'F': False, 'A': True, 'D': True, 'O': True, 'L': False, 'C': False, 'P': True, 'K': False, 'G': True}
+
+*********************************************** iteration no.5
+Satisfactory clauses: 83
+Unsatisfactory clauses: 8
+-Clausule to change: [-4 6 5 0]
+-Variable to change: F --> True
+New Instance: {'Q': True, 'N': False, 'S': True, 'J': False, 'B': False, 'E': True, 'R': True, 'T': False, 'H': False, 'I': False, 'M': False, 'F': True, 'A': True, 'D': True, 'O': True, 'L': False, 'C': False, 'P': True, 'K': False, 'G': True}
+
+*********************************************** iteration no.6
+Satisfactory clauses: 83
+Unsatisfactory clauses: 8
+-Clausule to change: [-16 8 10 0]
+-Variable to change: H --> True
+New Instance: {'Q': True, 'N': False, 'S': True, 'J': False, 'B': False, 'E': True, 'R': True, 'T': False, 'H': True, 'I': False, 'M': False, 'F': True, 'A': True, 'D': True, 'O': True, 'L': False, 'C': False, 'P': True, 'K': False, 'G': True}
+
+*********************************************** iteration no.7
+Satisfactory clauses: 83
+Unsatisfactory clauses: 8
+-Clausule to change: [-5 3 17 0]
+-Variable to change: E --> False
+New Instance: {'Q': True, 'N': False, 'S': True, 'J': False, 'B': False, 'E': False, 'R': True, 'T': False, 'H': True, 'I': False, 'M': False, 'F': True, 'A': True, 'D': True, 'O': True, 'L': False, 'C': False, 'P': True, 'K': False, 'G': True}
+
+*********************************************** iteration no.8
+Satisfactory clauses: 83
+Unsatisfactory clauses: 8
+-Clausule to change: [11 -8 7 0]
+-Variable to change: H --> False
+New Instance: {'Q': True, 'N': False, 'S': True, 'J': False, 'B': False, 'E': False, 'R': True, 'T': False, 'H': False, 'I': False, 'M': False, 'F': True, 'A': True, 'D': True, 'O': True, 'L': False, 'C': False, 'P': True, 'K': False, 'G': True}
+
+*********************************************** iteration no.9
+Satisfactory clauses: 83
+Unsatisfactory clauses: 8
+-Clausule to change: [-1 5 13 0]
+-Variable to change: A --> False
+New Instance: {'Q': True, 'N': False, 'S': True, 'J': False, 'B': False, 'E': False, 'R': True, 'T': False, 'H': False, 'I': False, 'M': False, 'F': True, 'A': False, 'D': True, 'O': True, 'L': False, 'C': False, 'P': True, 'K': False, 'G': True}
+
+*********************************************** iteration no.10
+Satisfactory clauses: 84
+Unsatisfactory clauses: 7
+-Clausule to change: [13 20 10 0]
+-Variable to change: T --> True
+New Instance: {'Q': True, 'N': False, 'S': True, 'J': False, 'B': False, 'E': False, 'R': True, 'T': True, 'H': False, 'I': False, 'M': False, 'F': True, 'A': False, 'D': True, 'O': True, 'L': False, 'C': False, 'P': True, 'K': False, 'G': True}
+
+*********************************************** iteration no.11
+Satisfactory clauses: 81
+Unsatisfactory clauses: 10
+-Clausule to change: [-7 -16 -18 0]
+-Variable to change: P --> False
+New Instance: {'Q': True, 'N': False, 'S': True, 'J': False, 'B': False, 'E': False, 'R': True, 'T': True, 'H': False, 'I': False, 'M': False, 'F': True, 'A': False, 'D': True, 'O': True, 'L': False, 'C': False, 'P': False, 'K': False, 'G': True}
+
+*********************************************** iteration no.12
+Satisfactory clauses: 83
+Unsatisfactory clauses: 8
+-Clausule to change: [1 14 -19 0]
+-Variable to change: N --> True
+New Instance: {'Q': True, 'N': True, 'S': True, 'J': False, 'B': False, 'E': False, 'R': True, 'T': True, 'H': False, 'I': False, 'M': False, 'F': True, 'A': False, 'D': True, 'O': True, 'L': False, 'C': False, 'P': False, 'K': False, 'G': True}
+
+*********************************************** iteration no.13
+Satisfactory clauses: 83
+Unsatisfactory clauses: 8
+-Clausule to change: [9 -19 11 0]
+-Variable to change: I --> True
+New Instance: {'Q': True, 'N': True, 'S': True, 'J': False, 'B': False, 'E': False, 'R': True, 'T': True, 'H': False, 'I': True, 'M': False, 'F': True, 'A': False, 'D': True, 'O': True, 'L': False, 'C': False, 'P': False, 'K': False, 'G': True}
+
+*********************************************** iteration no.14
+Satisfactory clauses: 82
+Unsatisfactory clauses: 9
+-Clausule to change: [-7 -9 17 0]
+-Variable to change: I --> False
+New Instance: {'Q': True, 'N': True, 'S': True, 'J': False, 'B': False, 'E': False, 'R': True, 'T': True, 'H': False, 'I': False, 'M': False, 'F': True, 'A': False, 'D': True, 'O': True, 'L': False, 'C': False, 'P': False, 'K': False, 'G': True}
+
+*********************************************** iteration no.15
+Satisfactory clauses: 83
+Unsatisfactory clauses: 8
+-Clausule to change: [8 10 -19 0]
+-Variable to change: H --> True
+New Instance: {'Q': True, 'N': True, 'S': True, 'J': False, 'B': False, 'E': False, 'R': True, 'T': True, 'H': True, 'I': False, 'M': False, 'F': True, 'A': False, 'D': True, 'O': True, 'L': False, 'C': False, 'P': False, 'K': False, 'G': True}
+
+*********************************************** iteration no.16
+Satisfactory clauses: 82
+Unsatisfactory clauses: 9
+-Clausule to change: [-6 11 -4 0]
+-Variable to change: D --> False
+New Instance: {'Q': True, 'N': True, 'S': True, 'J': False, 'B': False, 'E': False, 'R': True, 'T': True, 'H': True, 'I': False, 'M': False, 'F': True, 'A': False, 'D': False, 'O': True, 'L': False, 'C': False, 'P': False, 'K': False, 'G': True}
+
+*********************************************** iteration no.17
+Satisfactory clauses: 82
+Unsatisfactory clauses: 9
+-Clausule to change: [9 -17 -14 0]
+-Variable to change: Q --> False
+New Instance: {'Q': False, 'N': True, 'S': True, 'J': False, 'B': False, 'E': False, 'R': True, 'T': True, 'H': True, 'I': False, 'M': False, 'F': True, 'A': False, 'D': False, 'O': True, 'L': False, 'C': False, 'P': False, 'K': False, 'G': True}
+
+*********************************************** iteration no.18
+Satisfactory clauses: 84
+Unsatisfactory clauses: 7
+-Clausule to change: [5 9 10 0]
+-Variable to change: I --> True
+New Instance: {'Q': False, 'N': True, 'S': True, 'J': False, 'B': False, 'E': False, 'R': True, 'T': True, 'H': True, 'I': True, 'M': False, 'F': True, 'A': False, 'D': False, 'O': True, 'L': False, 'C': False, 'P': False, 'K': False, 'G': True}
+
+*********************************************** iteration no.19
+Satisfactory clauses: 82
+Unsatisfactory clauses: 9
+-Clausule to change: [-7 -9 17 0]
+-Variable to change: I --> False
+New Instance: {'Q': False, 'N': True, 'S': True, 'J': False, 'B': False, 'E': False, 'R': True, 'T': True, 'H': True, 'I': False, 'M': False, 'F': True, 'A': False, 'D': False, 'O': True, 'L': False, 'C': False, 'P': False, 'K': False, 'G': True}
+
+*********************************************** iteration no.20
+Satisfactory clauses: 84
+Unsatisfactory clauses: 7
+-Clausule to change: [5 9 10 0]
+-Variable to change: I --> True
+New Instance: {'Q': False, 'N': True, 'S': True, 'J': False, 'B': False, 'E': False, 'R': True, 'T': True, 'H': True, 'I': True, 'M': False, 'F': True, 'A': False, 'D': False, 'O': True, 'L': False, 'C': False, 'P': False, 'K': False, 'G': True}
+
+*********************************************** iteration no.21
+Satisfactory clauses: 83
+Unsatisfactory clauses: 8
+-Clausule to change: [11 -8 7 0]
+-Variable to change: H --> False
+New Instance: {'Q': False, 'N': True, 'S': True, 'J': False, 'B': False, 'E': False, 'R': True, 'T': True, 'H': False, 'I': True, 'M': False, 'F': True, 'A': False, 'D': False, 'O': True, 'L': False, 'C': False, 'P': False, 'K': False, 'G': True}
+
+*********************************************** iteration no.22
+Satisfactory clauses: 82
+Unsatisfactory clauses: 9
+-Clausule to change: [1 -20 -9 0]
+-Variable to change: T --> False
+New Instance: {'Q': False, 'N': True, 'S': True, 'J': False, 'B': False, 'E': False, 'R': True, 'T': False, 'H': False, 'I': True, 'M': False, 'F': True, 'A': False, 'D': False, 'O': True, 'L': False, 'C': False, 'P': False, 'K': False, 'G': True}
+
+*********************************************** iteration no.23
+Satisfactory clauses: 83
+Unsatisfactory clauses: 8
+-Clausule to change: [8 10 -19 0]
+-Variable to change: J --> True
+New Instance: {'Q': False, 'N': True, 'S': True, 'J': True, 'B': False, 'E': False, 'R': True, 'T': False, 'H': False, 'I': True, 'M': False, 'F': True, 'A': False, 'D': False, 'O': True, 'L': False, 'C': False, 'P': False, 'K': False, 'G': True}
+
+*********************************************** iteration no.24
+Satisfactory clauses: 82
+Unsatisfactory clauses: 9
+-Clausule to change: [-7 -9 17 0]
+-Variable to change: I --> False
+New Instance: {'Q': False, 'N': True, 'S': True, 'J': True, 'B': False, 'E': False, 'R': True, 'T': False, 'H': False, 'I': False, 'M': False, 'F': True, 'A': False, 'D': False, 'O': True, 'L': False, 'C': False, 'P': False, 'K': False, 'G': True}
+
+*********************************************** iteration no.25
+Satisfactory clauses: 84
+Unsatisfactory clauses: 7
+-Clausule to change: [13 20 10 0]
+-Variable to change: T --> True
+New Instance: {'Q': False, 'N': True, 'S': True, 'J': True, 'B': False, 'E': False, 'R': True, 'T': True, 'H': False, 'I': False, 'M': False, 'F': True, 'A': False, 'D': False, 'O': True, 'L': False, 'C': False, 'P': False, 'K': False, 'G': True}
+
+*********************************************** iteration no.26
+Satisfactory clauses: 84
+Unsatisfactory clauses: 7
+-Clausule to change: [5 9 10 0]
+-Variable to change: I --> True
+New Instance: {'Q': False, 'N': True, 'S': True, 'J': True, 'B': False, 'E': False, 'R': True, 'T': True, 'H': False, 'I': True, 'M': False, 'F': True, 'A': False, 'D': False, 'O': True, 'L': False, 'C': False, 'P': False, 'K': False, 'G': True}
+
+*********************************************** iteration no.27
+Satisfactory clauses: 83
+Unsatisfactory clauses: 8
+-Clausule to change: [17 -10 3 0]
+-Variable to change: J --> False
+New Instance: {'Q': False, 'N': True, 'S': True, 'J': False, 'B': False, 'E': False, 'R': True, 'T': True, 'H': False, 'I': True, 'M': False, 'F': True, 'A': False, 'D': False, 'O': True, 'L': False, 'C': False, 'P': False, 'K': False, 'G': True}
+
+*********************************************** iteration no.28
+Satisfactory clauses: 83
+Unsatisfactory clauses: 8
+-Clausule to change: [8 -20 15 0]
+-Variable to change: T --> False
+New Instance: {'Q': False, 'N': True, 'S': True, 'J': False, 'B': False, 'E': False, 'R': True, 'T': False, 'H': False, 'I': True, 'M': False, 'F': True, 'A': False, 'D': False, 'O': True, 'L': False, 'C': False, 'P': False, 'K': False, 'G': True}
+
+*********************************************** iteration no.29
+Satisfactory clauses: 82
+Unsatisfactory clauses: 9
+-Clausule to change: [-7 -9 17 0]
+-Variable to change: I --> False
+New Instance: {'Q': False, 'N': True, 'S': True, 'J': False, 'B': False, 'E': False, 'R': True, 'T': False, 'H': False, 'I': False, 'M': False, 'F': True, 'A': False, 'D': False, 'O': True, 'L': False, 'C': False, 'P': False, 'K': False, 'G': True}
+
+*********************************************** iteration no.30
+Satisfactory clauses: 83
+Unsatisfactory clauses: 8
+-Clausule to change: [20 5 -18 0]
+-Variable to change: E --> True
+New Instance: {'Q': False, 'N': True, 'S': True, 'J': False, 'B': False, 'E': True, 'R': True, 'T': False, 'H': False, 'I': False, 'M': False, 'F': True, 'A': False, 'D': False, 'O': True, 'L': False, 'C': False, 'P': False, 'K': False, 'G': True}
+
+*********************************************** iteration no.31
+Satisfactory clauses: 82
+Unsatisfactory clauses: 9
+-Clausule to change: [-6 -5 4 0]
+-Variable to change: E --> False
+New Instance: {'Q': False, 'N': True, 'S': True, 'J': False, 'B': False, 'E': False, 'R': True, 'T': False, 'H': False, 'I': False, 'M': False, 'F': True, 'A': False, 'D': False, 'O': True, 'L': False, 'C': False, 'P': False, 'K': False, 'G': True}
+
+*********************************************** iteration no.32
+Satisfactory clauses: 83
+Unsatisfactory clauses: 8
+-Clausule to change: [9 -19 11 0]
+-Variable to change: S --> False
+New Instance: {'Q': False, 'N': True, 'S': False, 'J': False, 'B': False, 'E': False, 'R': True, 'T': False, 'H': False, 'I': False, 'M': False, 'F': True, 'A': False, 'D': False, 'O': True, 'L': False, 'C': False, 'P': False, 'K': False, 'G': True}
+
+*********************************************** iteration no.33
+Satisfactory clauses: 83
+Unsatisfactory clauses: 8
+-Clausule to change: [13 3 -14 0]
+-Variable to change: N --> False
+New Instance: {'Q': False, 'N': False, 'S': False, 'J': False, 'B': False, 'E': False, 'R': True, 'T': False, 'H': False, 'I': False, 'M': False, 'F': True, 'A': False, 'D': False, 'O': True, 'L': False, 'C': False, 'P': False, 'K': False, 'G': True}
+
+*********************************************** iteration no.34
+Satisfactory clauses: 84
+Unsatisfactory clauses: 7
+-Clausule to change: [13 20 10 0]
+-Variable to change: T --> True
+New Instance: {'Q': False, 'N': False, 'S': False, 'J': False, 'B': False, 'E': False, 'R': True, 'T': True, 'H': False, 'I': False, 'M': False, 'F': True, 'A': False, 'D': False, 'O': True, 'L': False, 'C': False, 'P': False, 'K': False, 'G': True}
+
+*********************************************** iteration no.35
+Satisfactory clauses: 84
+Unsatisfactory clauses: 7
+-Clausule to change: [5 9 10 0]
+-Variable to change: E --> True
+New Instance: {'Q': False, 'N': False, 'S': False, 'J': False, 'B': False, 'E': True, 'R': True, 'T': True, 'H': False, 'I': False, 'M': False, 'F': True, 'A': False, 'D': False, 'O': True, 'L': False, 'C': False, 'P': False, 'K': False, 'G': True}
+
+*********************************************** iteration no.36
+Satisfactory clauses: 84
+Unsatisfactory clauses: 7
+-Clausule to change: [17 14 6 0]
+-Variable to change: N --> True
+New Instance: {'Q': False, 'N': True, 'S': False, 'J': False, 'B': False, 'E': True, 'R': True, 'T': True, 'H': False, 'I': False, 'M': False, 'F': True, 'A': False, 'D': False, 'O': True, 'L': False, 'C': False, 'P': False, 'K': False, 'G': True}
+
+*********************************************** iteration no.37
+Satisfactory clauses: 83
+Unsatisfactory clauses: 8
+-Clausule to change: [19 -20 15 0]
+-Variable to change: S --> True
+New Instance: {'Q': False, 'N': True, 'S': True, 'J': False, 'B': False, 'E': True, 'R': True, 'T': True, 'H': False, 'I': False, 'M': False, 'F': True, 'A': False, 'D': False, 'O': True, 'L': False, 'C': False, 'P': False, 'K': False, 'G': True}
+
+*********************************************** iteration no.38
+Satisfactory clauses: 83
+Unsatisfactory clauses: 8
+-Clausule to change: [13 3 -14 0]
+-Variable to change: M --> True
+New Instance: {'Q': False, 'N': True, 'S': True, 'J': False, 'B': False, 'E': True, 'R': True, 'T': True, 'H': False, 'I': False, 'M': True, 'F': True, 'A': False, 'D': False, 'O': True, 'L': False, 'C': False, 'P': False, 'K': False, 'G': True}
+
+*********************************************** iteration no.39
+Satisfactory clauses: 83
+Unsatisfactory clauses: 8
+-Clausule to change: [8 10 -19 0]
+-Variable to change: J --> True
+New Instance: {'Q': False, 'N': True, 'S': True, 'J': True, 'B': False, 'E': True, 'R': True, 'T': True, 'H': False, 'I': False, 'M': True, 'F': True, 'A': False, 'D': False, 'O': True, 'L': False, 'C': False, 'P': False, 'K': False, 'G': True}
+
+*********************************************** iteration no.40
+Satisfactory clauses: 83
+Unsatisfactory clauses: 8
+-Clausule to change: [9 -19 11 0]
+-Variable to change: S --> False
+New Instance: {'Q': False, 'N': True, 'S': False, 'J': True, 'B': False, 'E': True, 'R': True, 'T': True, 'H': False, 'I': False, 'M': True, 'F': True, 'A': False, 'D': False, 'O': True, 'L': False, 'C': False, 'P': False, 'K': False, 'G': True}
+
+*********************************************** iteration no.41
+Satisfactory clauses: 82
+Unsatisfactory clauses: 9
+-Clausule to change: [-13 -7 15 0]
+-Variable to change: G --> False
+New Instance: {'Q': False, 'N': True, 'S': False, 'J': True, 'B': False, 'E': True, 'R': True, 'T': True, 'H': False, 'I': False, 'M': True, 'F': True, 'A': False, 'D': False, 'O': True, 'L': False, 'C': False, 'P': False, 'K': False, 'G': False}
+
+*********************************************** iteration no.42
+Satisfactory clauses: 83
+Unsatisfactory clauses: 8
+-Clausule to change: [-5 2 18 0]
+-Variable to change: B --> True
+New Instance: {'Q': False, 'N': True, 'S': False, 'J': True, 'B': True, 'E': True, 'R': True, 'T': True, 'H': False, 'I': False, 'M': True, 'F': True, 'A': False, 'D': False, 'O': True, 'L': False, 'C': False, 'P': False, 'K': False, 'G': False}
+
+*********************************************** iteration no.43
+Satisfactory clauses: 83
+Unsatisfactory clauses: 8
+-Clausule to change: [-5 3 17 0]
+-Variable to change: C --> True
+New Instance: {'Q': False, 'N': True, 'S': False, 'J': True, 'B': True, 'E': True, 'R': True, 'T': True, 'H': False, 'I': False, 'M': True, 'F': True, 'A': False, 'D': False, 'O': True, 'L': False, 'C': True, 'P': False, 'K': False, 'G': False}
+
+*********************************************** iteration no.44
+Satisfactory clauses: 83
+Unsatisfactory clauses: 8
+-Clausule to change: [-5 8 3 0]
+-Variable to change: H --> True
+New Instance: {'Q': False, 'N': True, 'S': False, 'J': True, 'B': True, 'E': True, 'R': True, 'T': True, 'H': True, 'I': False, 'M': True, 'F': True, 'A': False, 'D': False, 'O': True, 'L': False, 'C': True, 'P': False, 'K': False, 'G': False}
+
+*********************************************** iteration no.45
+Satisfactory clauses: 83
+Unsatisfactory clauses: 8
+-Clausule to change: [19 -20 15 0]
+-Variable to change: T --> False
+New Instance: {'Q': False, 'N': True, 'S': False, 'J': True, 'B': True, 'E': True, 'R': True, 'T': False, 'H': True, 'I': False, 'M': True, 'F': True, 'A': False, 'D': False, 'O': True, 'L': False, 'C': True, 'P': False, 'K': False, 'G': False}
+
+*********************************************** iteration no.46
+Satisfactory clauses: 81
+Unsatisfactory clauses: 10
+-Clausule to change: [-6 -13 -2 0]
+-Variable to change: B --> False
+New Instance: {'Q': False, 'N': True, 'S': False, 'J': True, 'B': False, 'E': True, 'R': True, 'T': False, 'H': True, 'I': False, 'M': True, 'F': True, 'A': False, 'D': False, 'O': True, 'L': False, 'C': True, 'P': False, 'K': False, 'G': False}
+
+*********************************************** iteration no.47
+Satisfactory clauses: 83
+Unsatisfactory clauses: 8
+-Clausule to change: [-5 2 18 0]
+-Variable to change: E --> False
+New Instance: {'Q': False, 'N': True, 'S': False, 'J': True, 'B': False, 'E': False, 'R': True, 'T': False, 'H': True, 'I': False, 'M': True, 'F': True, 'A': False, 'D': False, 'O': True, 'L': False, 'C': True, 'P': False, 'K': False, 'G': False}
+
+*********************************************** iteration no.48
+Satisfactory clauses: 83
+Unsatisfactory clauses: 8
+-Clausule to change: [4 2 -3 0]
+-Variable to change: B --> True
+New Instance: {'Q': False, 'N': True, 'S': False, 'J': True, 'B': True, 'E': False, 'R': True, 'T': False, 'H': True, 'I': False, 'M': True, 'F': True, 'A': False, 'D': False, 'O': True, 'L': False, 'C': True, 'P': False, 'K': False, 'G': False}
+
+*********************************************** iteration no.49
+Satisfactory clauses: 84
+Unsatisfactory clauses: 7
+-Clausule to change: [17 7 6 0]
+-Variable to change: G --> True
+New Instance: {'Q': False, 'N': True, 'S': False, 'J': True, 'B': True, 'E': False, 'R': True, 'T': False, 'H': True, 'I': False, 'M': True, 'F': True, 'A': False, 'D': False, 'O': True, 'L': False, 'C': True, 'P': False, 'K': False, 'G': True}
+
+*********************************************** iteration no.50
+Satisfactory clauses: 82
+Unsatisfactory clauses: 9
+-Clausule to change: [20 -15 -10 0]
+-Variable to change: T --> True
+New Instance: {'Q': False, 'N': True, 'S': False, 'J': True, 'B': True, 'E': False, 'R': True, 'T': True, 'H': True, 'I': False, 'M': True, 'F': True, 'A': False, 'D': False, 'O': True, 'L': False, 'C': True, 'P': False, 'K': False, 'G': True}
+
+*********************************************** iteration no.51
+Satisfactory clauses: 83
+Unsatisfactory clauses: 8
+-Clausule to change: [-8 19 18 0]
+-Variable to change: S --> True
+New Instance: {'Q': False, 'N': True, 'S': True, 'J': True, 'B': True, 'E': False, 'R': True, 'T': True, 'H': True, 'I': False, 'M': True, 'F': True, 'A': False, 'D': False, 'O': True, 'L': False, 'C': True, 'P': False, 'K': False, 'G': True}
+
+*********************************************** iteration no.52
+Satisfactory clauses: 83
+Unsatisfactory clauses: 8
+-Clausule to change: [17 -10 3 0]
+-Variable to change: J --> False
+New Instance: {'Q': False, 'N': True, 'S': True, 'J': False, 'B': True, 'E': False, 'R': True, 'T': True, 'H': True, 'I': False, 'M': True, 'F': True, 'A': False, 'D': False, 'O': True, 'L': False, 'C': True, 'P': False, 'K': False, 'G': True}
+
+*********************************************** iteration no.53
+Satisfactory clauses: 81
+Unsatisfactory clauses: 10
+-Clausule to change: [-6 -13 -2 0]
+-Variable to change: B --> False
+New Instance: {'Q': False, 'N': True, 'S': True, 'J': False, 'B': False, 'E': False, 'R': True, 'T': True, 'H': True, 'I': False, 'M': True, 'F': True, 'A': False, 'D': False, 'O': True, 'L': False, 'C': True, 'P': False, 'K': False, 'G': True}
+
+*********************************************** iteration no.54
+Satisfactory clauses: 83
+Unsatisfactory clauses: 8
+-Clausule to change: [9 -19 11 0]
+-Variable to change: S --> False
+New Instance: {'Q': False, 'N': True, 'S': False, 'J': False, 'B': False, 'E': False, 'R': True, 'T': True, 'H': True, 'I': False, 'M': True, 'F': True, 'A': False, 'D': False, 'O': True, 'L': False, 'C': True, 'P': False, 'K': False, 'G': True}
+
+*********************************************** iteration no.55
+Satisfactory clauses: 82
+Unsatisfactory clauses: 9
+-Clausule to change: [-13 -7 15 0]
+-Variable to change: G --> False
+New Instance: {'Q': False, 'N': True, 'S': False, 'J': False, 'B': False, 'E': False, 'R': True, 'T': True, 'H': True, 'I': False, 'M': True, 'F': True, 'A': False, 'D': False, 'O': True, 'L': False, 'C': True, 'P': False, 'K': False, 'G': False}
+
+*********************************************** iteration no.56
+Satisfactory clauses: 83
+Unsatisfactory clauses: 8
+-Clausule to change: [-8 19 18 0]
+-Variable to change: S --> True
+New Instance: {'Q': False, 'N': True, 'S': True, 'J': False, 'B': False, 'E': False, 'R': True, 'T': True, 'H': True, 'I': False, 'M': True, 'F': True, 'A': False, 'D': False, 'O': True, 'L': False, 'C': True, 'P': False, 'K': False, 'G': False}
+
+*********************************************** iteration no.57
+Satisfactory clauses: 83
+Unsatisfactory clauses: 8
+-Clausule to change: [7 -6 20 0]
+-Variable to change: F --> False
+New Instance: {'Q': False, 'N': True, 'S': True, 'J': False, 'B': False, 'E': False, 'R': True, 'T': True, 'H': True, 'I': False, 'M': True, 'F': False, 'A': False, 'D': False, 'O': True, 'L': False, 'C': True, 'P': False, 'K': False, 'G': False}
+
+*********************************************** iteration no.58
+Satisfactory clauses: 83
+Unsatisfactory clauses: 8
+-Clausule to change: [16 7 -3 0]
+-Variable to change: P --> True
+New Instance: {'Q': False, 'N': True, 'S': True, 'J': False, 'B': False, 'E': False, 'R': True, 'T': True, 'H': True, 'I': False, 'M': True, 'F': False, 'A': False, 'D': False, 'O': True, 'L': False, 'C': True, 'P': True, 'K': False, 'G': False}
+
+*********************************************** iteration no.59
+Satisfactory clauses: 82
+Unsatisfactory clauses: 9
+-Clausule to change: [-16 -8 18 0]
+-Variable to change: H --> False
+New Instance: {'Q': False, 'N': True, 'S': True, 'J': False, 'B': False, 'E': False, 'R': True, 'T': True, 'H': False, 'I': False, 'M': True, 'F': False, 'A': False, 'D': False, 'O': True, 'L': False, 'C': True, 'P': True, 'K': False, 'G': False}
+
+*********************************************** iteration no.60
+Satisfactory clauses: 83
+Unsatisfactory clauses: 8
+-Clausule to change: [8 10 -19 0]
+-Variable to change: S --> False
+New Instance: {'Q': False, 'N': True, 'S': False, 'J': False, 'B': False, 'E': False, 'R': True, 'T': True, 'H': False, 'I': False, 'M': True, 'F': False, 'A': False, 'D': False, 'O': True, 'L': False, 'C': True, 'P': True, 'K': False, 'G': False}
+
+**********************************************
+**********************************************
+NO SOLUTION FOR THIS INSTANCE
+**********************************************
+**********************************************
