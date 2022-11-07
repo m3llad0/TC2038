@@ -1,4 +1,4 @@
-// Evidencia 1
+// Actividad 1
 // Tonatiuh Reyes
 // Diego Mellado
 // Iwalani Amador
@@ -49,7 +49,7 @@ int main() {
       incidence++;
     }
   }
-  cout << endl << "Se encontro en el archivo de" << fileName << ": ";
+  cout << endl << "En el archivo se encontro el mensaje de " << fileName << ": ";
 
   if (incidence > 0) {
     cout << "true" << endl;
