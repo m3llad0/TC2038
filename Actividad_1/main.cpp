@@ -45,7 +45,7 @@ int main() {
       j++;
     }
     if (j >= aSize && i != 0) {
-      findIndex += to_string(i) + " ";
+      findIndex += to_string(i-aSize) + " ";
       incidence++;
     }
   }
