@@ -17,12 +17,17 @@ class Graph():
                         for row in range(vertex)]
     
     def solution(self, distance):
-        print("Vertex \tDistance from source")
+        print("Forma de cablear las colonias con fibra: ", end = "")
         for node in range(self.V):
-            node_ = [str(node+1), distance[node]]
+            
+            node_ = [chr(ord('@') + (node + 1)), distance[node]]
             self.solutionList.append(node_)
         
-        print(sorted(self.solutionList))
+        sol = sorted(self.solutionList, reverse = True)
+
+        for node in sol:
+            print(node[0] + ",", end = "")
+        print('\n')
 
     def minimumDistance(self, distance, shortestPath):
         
