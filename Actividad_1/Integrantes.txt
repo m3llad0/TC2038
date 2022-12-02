@@ -1,0 +1,11 @@
+Los integrantes que conforman esta actividad integradora son: 
+
+- Diego Mellado Oliveros 
+- Tonatiuh Reyes Huerta 
+- Iwalani Amador Piaga 
+
+Colaborativamente se realizo el diseño del algoritmo mayormente basado en "Z function"
+
+- Reconocimieto de mensajes (Tonatiuh)
+- Incidencias (Diego)
+- Lectura de strings (Iwalani)
