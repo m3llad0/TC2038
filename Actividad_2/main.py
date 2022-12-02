@@ -71,30 +71,38 @@ class Graph():
                         heapq.heappush(heap, (conn, d))
         return dist
 
+def read_file():
+    with open("input.txt", "r") as file:
+        start = int(file.readline())
+        matrix = []
+        for line in file:
+            matrix.append([int(x) for x in line.split(",")])
+        return start, matrix
+
 def main():
     # Txt format should be:
-    # 1st line: Start node (int) starts at 0
-    # Next lines: Matrix of adyacence, each element in a row separated by a coma, and rows separated by dot and coma.
+    # 1st line: Start node (int) If you want first node start at 0. Ends at newline
+    # Next lines: Matrix of adyacence, each element in a row separated by a coma, and rows separated newline.
     # Example:
     # 0
-    # 0, 16, 45, 32;
-    # 16, 0, 18, 21;
-    # 45, 18, 0,  7;
-    # 32, 21, 7,  0;
+    # 0, 16, 45, 32
+    # 16, 0, 18, 21
+    # 45, 18, 0,  7
+    # 32, 21, 7,  0
 
-    matrix = [[0, 16, 45, 32],
-              [16, 0, 18, 21],
-              [45, 18, 0,  7],
-              [32, 21, 7,  0]]
-    graph = Graph(4, matrix)
+    start, matrix = read_file()
 
-    solution = graph.solution(0)
+    graph = Graph(len(matrix), matrix)
+
+    solution = graph.solution(start)
 
     print(" Forma de cablear las colonias con fibra: (", end=" ")
     abc = ["A","B","C","D","E","F","G","H","I","J","K","L","M","N","O","P","Q","R","S","T","U","V","W","X","Y","Z"]
     for i in range(len(solution)):
         print(abc[solution[i]], end=", ")
     print(")")
+
+
 main()
 
 
