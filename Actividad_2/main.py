@@ -7,67 +7,94 @@ Tonatiuh Reyes
 Diego Mellado
 """
 
-import sys
+from collections import defaultdict
+import heapq
 
 class Graph():
-    def __init__(self, vertex):
-        self.solutionList = []
+    """
+    Clase que representa un grafo
+    ELements:
+        path: Lista que contiene el camino más corto
+        V: Numero de vertices
+        adjList: Lista de adyacencia (Grafo)
+    """
+    def __init__(self, vertex, matrix):
+        """
+        Constructor de la clase
+        Args:
+            vertex: Numero de vertices
+            matrix: Matriz de adyacencia
+        """
+        self.path = []
         self.V = vertex
-        self.graph = [[0 for column in range(vertex)]
-                        for row in range(vertex)]
-    
-    def solution(self, distance):
-        print("Forma de cablear las colonias con fibra: ", end = "")
-        for node in range(self.V):
-            
-            node_ = [chr(ord('@') + (node + 1)), distance[node]]
-            self.solutionList.append(node_)
-        
-        sol = sorted(self.solutionList, reverse = True)
+        # Matrix to adjacency list. We see it faster and easier to work with
+        self.adjList = defaultdict(list)
+        for i in range(len(matrix)):
+            for j in range(len(matrix[i])):
+                        if matrix[i][j] != 0:
+                            self.adjList[i].append([j, matrix[i][j]])
 
-        for node in sol:
-            print(node[0] + ",", end = "")
-        print('\n')
+    def solution(self, start):
+        self.path.append(start)
+        for i in range(self.V-1):
+            dist = self.dijkstra(self.path[i])
+            smallest = None
+            for j in range(self.V):
+                if dist[j] != 0 and dist[j] != float('inf') and j not in self.path:
+                    if smallest == None:
+                        smallest = dist[j]
+                    elif smallest > dist[j]:
+                        smallest = dist[j]
+            if smallest == None:
+                self.path.append(dist.index(float('inf')))
+            else:
+                self.path.append(dist.index(smallest))
 
-    def minimumDistance(self, distance, shortestPath):
-        
-        min = sys.maxsize
+        return self.path
 
-        for u in range(self.V):
-            if distance[u] < min and shortestPath[u] == False:
-                min = distance[u]
-                min_index = u
+    def dijkstra(self, source):
+        dist = [float('inf')] * self.V
+        seen = set()
+        heap = []
+        dist[source] = 0
 
-        return min_index
+        heapq.heappush(heap, (source, dist[source]))
 
-    def Dijkstra(self, source):
-        
-        distance = [sys.maxsize] * self.V
-        distance[source-1] = 0
-        shortestPath = [False] * self.V
-
-        for cout in range(self.V):
-
-            x = self.minimumDistance(distance, shortestPath)
-
-            shortestPath[x] = True
-
-            for y in range(self.V):
-                 if self.graph[x][y] > 0 and shortestPath[y] == False and \
-                        distance[y] > distance[x] + self.graph[x][y]:
-                    distance[y] = distance[x] + self.graph[x][y]
-            
-        self.solution(distance)
+        while len(heap) > 0:
+            node, weight = heapq.heappop(heap)
+            seen.add(weight)
+            for conn, w in self.adjList[node]:
+                if conn not in seen:
+                    d = weight + w
+                    if d < dist[conn]:
+                        dist[conn] = d
+                        heapq.heappush(heap, (conn, d))
+        return dist
 
 def main():
-    graph = Graph(4)
-    graph.graph = [[0, 16, 45, 32],
-                   [16, 0, 18, 21],
-                   [45, 18, 0,  7],
-                   [32, 21, 7,  0]]
- 
-    graph.Dijkstra(4)
+    # Txt format should be:
+    # 1st line: Start node (int) starts at 0
+    # Next lines: Matrix of adyacence, each element in a row separated by a coma, and rows separated by dot and coma.
+    # Example:
+    # 0
+    # 0, 16, 45, 32;
+    # 16, 0, 18, 21;
+    # 45, 18, 0,  7;
+    # 32, 21, 7,  0;
 
+    matrix = [[0, 16, 45, 32],
+              [16, 0, 18, 21],
+              [45, 18, 0,  7],
+              [32, 21, 7,  0]]
+    graph = Graph(4, matrix)
+
+    solution = graph.solution(0)
+
+    print(" Forma de cablear las colonias con fibra: (", end=" ")
+    abc = ["A","B","C","D","E","F","G","H","I","J","K","L","M","N","O","P","Q","R","S","T","U","V","W","X","Y","Z"]
+    for i in range(len(solution)):
+        print(abc[solution[i]], end=", ")
+    print(")")
 main()
 
 
