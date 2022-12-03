@@ -1,0 +1,12 @@
+Integrantes del equipo: 
+- Diego Mellado Oliveros
+- Tonatiuh Reyes Huerta
+- Iwalani Amador Piaga
+
+Todo el equipo colaboro en las decisiones y la implementación del algoritmo en la situacion problema 
+
+- implementación de la clase grafo - base (todo el equipo)
+- implementación de Dijkstra (todo el equipo)
+- def solution (Tonatiuh)
+- read file (Iwalani)
+- main (Diego)
